@@ -39,16 +39,15 @@ import java.util.Vector;
 public class App extends Application {
 
     //Logger
-    private static final Logger logger = LogManager.getLogger(App.class)
+    private static final Logger logger = LogManager.getLogger(App.class);
 
-    //GetterSetter
-    @Getter @Setter
+    //GetterSetter for Scene
     private Vector<Course> courses;
     private AppView currentView;
     private final Map<String, AppView> views;
     private BorderPane mainLayout;
     private ChoiceBox<String> depts;
-    private Scene scene;
+    private @Getter @Setter Scene scene;
 
     public App() {
         views = Maps.newHashMap();
