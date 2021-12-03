@@ -1,10 +1,20 @@
 package edu.isu.cs.cs2263.hw02.data;
 
+//Imports
+import lombok.*;
+import lombok.extern.log4j.Log4j2;
+import org.apache.logging.log4j.Logger;
+import org.apache.logging.log4j.LogManager;
+
+//Log4J2
+@Log4j2
 public class Course {
 
     public static final String[] CODES = { "CS", "CHEM", "PHYS", "MATH", "BTNY", "ZOO" };
     public static final String[] DEPTS = { "Computer Science", "Chemistry", "Physics", "Mathematics", "Botany", "Zoology" };
 
+    //Lombok
+    @Getter @Setter
     private int number;
     private String name;
     private int credits;

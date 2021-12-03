@@ -3,6 +3,15 @@
  */
 package edu.isu.cs.cs2263.hw02;
 
+
+//Lombok Imports
+import lombok.Getter;
+import lombok.Setter;
+import lombok.extern.log4j.Log4j2;
+import org.apache.logging.log4j.Logger;
+import org.apache.logging.log4j.LogManager;
+
+
 import com.google.common.collect.Maps;
 import edu.isu.cs.cs2263.hw02.data.Course;
 import edu.isu.cs.cs2263.hw02.views.AppView;
@@ -25,8 +34,15 @@ import java.util.Map;
 import java.util.Optional;
 import java.util.Vector;
 
+//Log4j2
+@Log4j2
 public class App extends Application {
 
+    //Logger
+    private static final Logger logger = LogManager.getLogger(App.class)
+
+    //GetterSetter
+    @Getter @Setter
     private Vector<Course> courses;
     private AppView currentView;
     private final Map<String, AppView> views;

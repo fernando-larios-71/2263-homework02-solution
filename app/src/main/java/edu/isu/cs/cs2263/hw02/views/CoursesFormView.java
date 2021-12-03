@@ -18,9 +18,17 @@ import javafx.scene.text.TextAlignment;
 import org.kordamp.ikonli.javafx.FontIcon;
 import org.kordamp.ikonli.materialdesign2.MaterialDesignP;
 import org.kordamp.ikonli.materialdesign2.MaterialDesignR;
+import lombok.Setter;
+import lombok.Getter;
+
+
+
+
+
 
 public class CoursesFormView extends AppView {
-
+//Lombok
+    @Getter @Setter
     private TextField tfName;
     private Spinner<Integer> spnNumber;
     private Spinner<Integer> spnCredits;
