@@ -3,8 +3,6 @@ package edu.isu.cs.cs2263.hw02.data;
 //Imports
 import lombok.*;
 import lombok.extern.log4j.Log4j2;
-import org.apache.logging.log4j.Logger;
-import org.apache.logging.log4j.LogManager;
 
 //Log4J2
 @Log4j2
@@ -37,7 +35,7 @@ public class Course {
         this.number = number;
     }
 
-    public String getName() {
+    public int getName() {
         return name;
     }
 
@@ -53,7 +51,7 @@ public class Course {
         this.credits = credits;
     }
 
-    public String getCode() {
+    public int getCode() {
         return code;
     }
 

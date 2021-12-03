@@ -17,8 +17,17 @@ class CourseTest {
 
     @Test void CourseIsNamed(){
         Course classToTest = new Course();
-
+        String name = 'OO Programming';
+        classToTest.setName(name);
         assertNotNull(classToTest.getName());
     }
-    @Test void
+
+    @Test void CourseCode(){
+        Course classToTest = new Course();
+        String code = '2263';
+        classToTest.setCode(code);
+        assertNotNull(classToTest.getCode());
+    }
+
+
 }
